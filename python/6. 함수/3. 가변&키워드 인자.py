@@ -1,11 +1,23 @@
 #3-1
+def multi_sum(a, b, c, d):
+    num = 4  
+    total = a + b + c + d  
+    print("입력된 변수 개수: ", str(num) + "개")
+    print("입력된 값들: ", (a, b, c, d))
+    return total  
+
+print(multi_sum(1,2,3,4))
+
+
 def multi_sum(*args):
     num = len(args)
+    total = sum(args)
     print("입력 된 변수 개수 : ", str(num)+"개")
     print(args)
+    return total
     
-multi_sum(1,2,3,4,5,6,7)
-multi_sum(5,1,3,2)
+print(multi_sum(1,2,3,4,5,6,7))
+print(multi_sum(5,1,3,2))
 
 #3-2
 def profile(name, age, *language):
