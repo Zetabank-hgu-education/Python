@@ -1,4 +1,4 @@
-#2-1
+#1-1
 identity = '지구인'  #변수이름 =(등호) 변수로 넣을 내용
 number_of_legs = 4
 print('안녕! 나는', identity, '이야. 나는 다리가', number_of_legs, '개 있어.')

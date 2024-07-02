@@ -12,13 +12,13 @@
 
 from random import *
 users = range(1,21)
-#print(type(users))
+print(type(users))
 users = list(users)
-#print(type(users))
+print(type(users))
 
-print(users)
-shuffle(users)
-print(users)
+# print(users)
+# shuffle(users)
+# print(users)
 
 winners = sample(users, 4) #4명 중에서 1명은 치킨, 3명은 커피
 

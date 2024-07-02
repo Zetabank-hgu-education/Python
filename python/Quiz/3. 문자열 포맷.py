@@ -7,15 +7,15 @@
               #(nav)               (5)            (1)             (!)
 # 예) 생성된 비밀번호 : nav51!
 # password 변수를 이용하여 비밀번호 도출
-#규칙4 : format함수를 이용하여 "(url)의 비밀번호는 (password) 입니다" 도출     
+#규칙4 : format함수를 이용하여 "url의 password는 입니다" 도출     
 
 url = "http://naver.com"
 my_str = url.replace("http://", "")
-#print(my_str)
+print(my_str)
 my_str = my_str[:my_str.index(".")]
-#print(my_str)    
+print(my_str)    
 password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
-#print(password)
+print(password)
 print("{0}의 비밀번호는 {1} 입니다.".format(url, password))
 
 
